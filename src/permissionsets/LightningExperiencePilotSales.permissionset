@@ -72,6 +72,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Knowledge__kav.Answer__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Knowledge__kav.Question__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Lead.CurrentGenerators__c</field>
         <readable>false</readable>
     </fieldPermissions>
