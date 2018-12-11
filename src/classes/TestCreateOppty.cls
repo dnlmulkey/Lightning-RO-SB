@@ -1,4 +1,4 @@
-@isTest
+@IsTest
 public class TestCreateOppty {
     public static testMethod void newOpptyValid(){
         Account a = new Account(Name = 'Burlington Acme');
@@ -7,10 +7,10 @@ public class TestCreateOppty {
         insert c;        
         String oppName = 'Burlington Acme 1000 TVs';
         
-        List<Opportunity> lob = [SELECT Name, AccountId, StageName, CloseDate From Opportunity];
+        List<Opportunity> lob = [SELECT Name, AccountId, StageName, CloseDate FROM Opportunity];
         System.assertEquals(0, lob.size());
-        CreateOppty.newOppty(oppName, c.id);
-        List<Opportunity> lo = [SELECT Name, AccountId, StageName, CloseDate From Opportunity];
+        CreateOppty.newOppty(oppName, c.Id);
+        List<Opportunity> lo = [SELECT Name, AccountId, StageName, CloseDate FROM Opportunity];
         System.assertEquals(1, lo.size());
         System.assertEquals(lo[0].Name, oppName);
         System.assertEquals(lo[0].AccountId, a.Id);

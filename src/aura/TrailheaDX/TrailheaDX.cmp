@@ -1,0 +1,7 @@
+<!--
+ - Created by Oleh Berehovskyi on 11-Dec-18.
+ -->
+
+<aura:component implements="flexipage:availableForAllPageTypes" access="global" >
+    <ui:outputURL value="https://developer.salesforce.com/trailheadx/" label="TrailheaDX" target="_blank"/>
+</aura:component>

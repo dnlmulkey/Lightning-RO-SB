@@ -2,7 +2,7 @@ public class CreateOppty {
     @AuraEnabled
     public static Opportunity newOppty(String oppName, Id caseId) {
         System.debug('Name: ' + oppName);
-        System.debug('caseId: ' + CaseId);
+        System.debug('caseId: ' + caseId);
         Case caseRecord = [
                 SELECT AccountId
                 FROM Case
